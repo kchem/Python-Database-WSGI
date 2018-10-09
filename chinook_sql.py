@@ -12,7 +12,7 @@ def sql_read_app(environ, start_response):
     conn = sqlite3.connect("chinook.db")
     conn.text_factory = str
     cur = conn.cursor()
-    cur.execute("SELECT * FROM genres")
+    cur.execute("SELECT * FROM artists")
  
     rows = cur.fetchall()
  

@@ -9,10 +9,10 @@ def hello_app(environ, start_response):
     #mydtetme = datetime.now().ctime()
     
     #content='''<p>The time is now {} Surprise!'''.format(mydtetme)
-    conn = sqlite3.connect("/home/cabox/workspace/dataparts/chinook.db")
+    conn = sqlite3.connect("chinook.db")
     conn.text_factory = str
     cur = conn.cursor()
-    cur.execute("SELECT * FROM genres")
+    cur.execute("SELECT * FROM artists")
  
     rows = cur.fetchall()
  
