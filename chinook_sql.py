@@ -38,7 +38,7 @@ tr:nth-child(even) {
 </head>
 <body>
 <table>
-<caption><h2>Music Genres</h2></caption>
+<caption><h2>Music Artists</h2></caption>
   <tr>
     <th>ID</th>
     <th>Name</th>
